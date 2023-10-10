@@ -1,6 +1,8 @@
 import React from "react";
 import Login from "./src/pages/Login";
+import Home from "./src/pages/Home";
 import { ThemeProvider, DefaultTheme } from "react-native-paper";
+import { StatusBar } from "react-native";
 
 const App = () => {
   // em vez de 
@@ -12,10 +14,12 @@ const App = () => {
     }
   }
 
+  {/*StatusBar -> barra de statud*/ }
   return (
     // em vez de PeparProvide é ThemeProvider
     <ThemeProvider theme={thema}>
-      <Login />
+      <StatusBar backgroundColor="#000" />
+      <Home />
     </ThemeProvider>
   );
 }

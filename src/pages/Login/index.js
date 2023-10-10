@@ -38,14 +38,14 @@ const Login = () => {
                 <Button
                     mode="contained" // modelo do botao
                     style={styles.marginBottom}
-                    onPress={() => console.log('...')}
+                    onPress={() => console.log('Pressed1')}
                 >
                     Entrar
                 </Button>
 
                 <Button
                     style={styles.marginBottom}
-                    onPress={() => console.log('...')}
+                    onPress={() => console.log('Pressed2')}
                     theme={{ colors: { primary: '#fff' } }} // tema isso aqui é do react-paper
                 >
                     Recuperar Senha
