@@ -6,7 +6,7 @@ import styles from "./styles";
 // TouchableOpacity -> para botoes com opacidade
 const Header = () => {
     return (
-        <LinearGradient style={styles.header} colors={['rgba(0,0,0,0.9)', 'rgba(0,0,0,0)']}>
+        <LinearGradient style={styles.header} colors={['rgba(0,0,0,1)', 'rgba(0,0,0,0)']}>
             <View style={styles.headerSafeAreaView}>
                 <Image source={require('../../assets/logo-compact.png')} />
                 <TouchableOpacity>
