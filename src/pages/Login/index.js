@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { Text, View, Image } from "react-native";
 import { TextInput, Button } from "react-native-paper";
-
 import styles from "./styles";
 // view -> como se fosse uma div
 // text -> texto
-
+// react-native-paper -> como se fosse o bootstrap
 
 const Login = () => {
-
     const [credenciais, setCredenciais] = useState({
         email: '',
         senha: ''
@@ -46,7 +44,7 @@ const Login = () => {
                 <Button
                     style={styles.marginBottom}
                     onPress={() => console.log('Pressed2')}
-                    theme={{ colors: { primary: '#fff' } }} // tema isso aqui é do react-paper
+                    theme={{ colors: { primary: '#fff' } }} // tema isso aqui é do react-paper ta na documentaçao.
                 >
                     Recuperar Senha
                 </Button>

@@ -6,6 +6,7 @@ import styles from "./styles";
 // TouchableOpacity -> para botoes com opacidade
 const Header = () => {
     return (
+        // LinearGradient como se fosse uma view convencional. colors inicio e fim do gradiente
         <LinearGradient style={styles.header} colors={['rgba(0,0,0,1)', 'rgba(0,0,0,0)']}>
             <View style={styles.headerSafeAreaView}>
                 <Image source={require('../../assets/logo-compact.png')} />
