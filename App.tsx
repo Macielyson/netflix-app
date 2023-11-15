@@ -24,7 +24,7 @@ const App = () => {
     // em vez de PeparProvide é ThemeProvider
     <ThemeProvider theme={thema}>
       <StatusBar backgroundColor="#000" />
-      <Login />
+      <Home />
     </ThemeProvider>
   );
 }

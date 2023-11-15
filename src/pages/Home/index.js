@@ -1,6 +1,6 @@
 import React from "react";
 // trabalhar com listas FlatList
-import { View, ScrollView ,FlatList, TouchableOpacity, Image } from "react-native";
+import { View, ScrollView, FlatList, TouchableOpacity, Image } from "react-native";
 import styles from '../Home/styles';
 import { Button, Title } from "react-native-paper";
 import Header from "../../components/Header";
@@ -8,6 +8,7 @@ import Hero from "../../components/Hero";
 import ButtonVertical from "../../components/ButtonVertical";
 import LinearGradient from "react-native-linear-gradient";
 import Previas from "../../components/Previas";
+import Secao from "../../components/Secao";
 
 const Home = () => {
     return (
@@ -21,11 +22,15 @@ const Home = () => {
                 <Button icon="play" uppercase={false} mode="contained" buttonColor="#ccc">Assistir</Button>
                 <ButtonVertical icon={"information-outline"} text={"Saiba Mais"} />
             </View>
+
             <View style={styles.previaContainer}>
                 <Title style={styles.previaTitle}> Prévias </Title>
-                <Previas/>
+                <Previas />
             </View>
 
+            {[1, 2, 3, 4, 5].map((secao, index) => (
+                <Secao hasTopBorder key={index} />)
+            )}
         </ScrollView>
     );
 }
