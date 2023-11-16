@@ -1,6 +1,7 @@
 import React from "react";
 import Login from "./src/pages/Login";
 import Home from "./src/pages/Home";
+import Filme from "./src/pages/Filme";
 import { ThemeProvider, DefaultTheme } from "react-native-paper";
 import { StatusBar } from "react-native";
 
@@ -24,7 +25,7 @@ const App = () => {
     // em vez de PeparProvide é ThemeProvider
     <ThemeProvider theme={thema}>
       <StatusBar backgroundColor="#000" />
-      <Home />
+      <Filme />
     </ThemeProvider>
   );
 }
