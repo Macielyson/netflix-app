@@ -1,0 +1,6 @@
+JS.coach -> para procurar modulos legais e colocar em meus projetos js.
+muito bom mesmo.
+
+passar para o oneNote. aula10
+
+modulo legal é o react-native-material-dialog -> muito bom para usar esse componente.
