@@ -9,7 +9,8 @@ import Episodeo from "../../components/Episodeo";
 import { SinglePickerMaterialDialog } from "react-native-material-dialog";
 
 const Filme = () => {
-    const [tipo, setTipo] = useState('serie');
+
+    const [tipo] = useState('serie');
     const [visible, setVisible] = useState(false);
     const [temporada, setTemporada] = useState({ value: 1, label: 'Temporada 1' })
 
@@ -26,11 +27,13 @@ const Filme = () => {
                 visible={visible}
                 selectedItem={temporada}
                 onOk={(result) => {
-                    setVisible(true);
+                    setVisible(false);
                     setTemporada(result.selectedItem);
                 }}
             />
+
             <ScrollView style={styles.container}>
+                {console.log("ERROR AQUI MACIELYSON")}
                 <ImageBackground source={{ uri: 'https://i.imgur.com/EJyDFeY.jpg' }} style={styles.hero} />
                 <View style={styles.containerPadding}>
                     <Title style={styles.textColorWhite}>O diabo de cada dia</Title>
@@ -40,7 +43,6 @@ const Filme = () => {
                         Assassinos. Numa cidade cheia de pecadores, um jovem
                         busca justiça
                     </Paragraph>
-
                     <Caption style={styles.captionInfos}>
                         Elenco: {' '}
                         <Caption style={styles.captionWhite}>
@@ -54,7 +56,6 @@ const Filme = () => {
                         <Caption style={styles.captionWhite}>
                             Violentos
                         </Caption>{' '}
-
                     </Caption>
                     <View style={styles.menu}>
                         <ButtonVertical icon="plus" text="Minha Lista" />
@@ -70,17 +71,16 @@ const Filme = () => {
                             </TouchableOpacity>
                             <FlatList
                                 data={[1, 2, 3, 4]}
-                                renderItem={(item, index) => (<Episodeo key={index} />)}
+                                renderItem={(item, index) => (
+                                    <Episodeo key={index} />)}
                             />
                         </>
                     )}
                 </View>
                 {tipo == 'filme' && <Secao hasTopBorder />}
-
-
             </ScrollView>
         </>
-    )
-}
+    );
+};
 
 export default Filme;

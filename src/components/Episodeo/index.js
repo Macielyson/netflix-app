@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, TouchableOpacity, Image } from "react-native";
+import { View, TouchableOpacity, Image } from "react-native";
 import { Caption, Title } from "react-native-paper";
 import styles from "./styles";
 

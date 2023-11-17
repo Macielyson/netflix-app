@@ -6,7 +6,7 @@ import styles from "./styles";
 // text -> texto
 // react-native-paper -> como se fosse o bootstrap
 
-const Login = () => {
+const Login = ({navigation}) => {
     const [credenciais, setCredenciais] = useState({
         email: '',
         senha: ''
@@ -36,7 +36,7 @@ const Login = () => {
                 <Button
                     mode="contained" // modelo do botao
                     style={styles.marginBottom}
-                    onPress={() => console.log('Pressed1')}
+                    onPress={() => navigation.navigate('Home')}
                 >
                     Entrar
                 </Button>
